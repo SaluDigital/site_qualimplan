@@ -143,8 +143,8 @@ const Header = () => {
             React.createElement(
               "div",
               { className: "header-submenu", role: "menu" },
-              ["Ortodontia", "Alinhadores", "Pr\u00f3teses", "Odontopediatria", "Est\u00e9tica", "Endodontia", "Periodontia", "Cirurgia", "Preenchimento", "T\u00f3xina Botul\u00ednica"].map((item, index) =>
-                React.createElement("a", { key: index, href: item === "Ortodontia" ? "ortodontia.html" : "#especialidades", role: "menuitem", onClick: closeMobile }, item)
+              ["Ortodontia", "Alinhadores", "Pr\u00f3teses", "Odontopediatria", "Est\u00e9tica", "Endodontia", "Periodontia", "Implantodontia", "Cirurgia", "Preenchimento", "T\u00f3xina Botul\u00ednica"].map((item, index) =>
+                React.createElement("a", { key: index, href: item === "Ortodontia" ? "ortodontia.html" : item === "Alinhadores" ? "alinhadores.html" : item === "Pr\u00f3teses" ? "protese.html" : item === "Odontopediatria" ? "odontopediatria.html" : item === "Est\u00e9tica" ? "estetica-dental.html" : item === "Endodontia" ? "endodontia.html" : item === "Periodontia" ? "periodontia.html" : item === "Implantodontia" ? "implante.html" : item === "Cirurgia" ? "cirurgia.html" : item === "Preenchimento" ? "preenchimento.html" : item === "T\u00f3xina Botul\u00ednica" ? "toxina-botulinica.html" : "#especialidades", role: "menuitem", onClick: closeMobile }, item)
               )
             )
           ),
