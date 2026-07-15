@@ -281,7 +281,10 @@ const Hero = () => React.createElement(
       React.createElement("h1", { className: "display" }, React.createElement(Reveal, { as: "span", delay: 80, style: { display: "block" } }, "Seu sorriso ", React.createElement("em", null, "merece o melhor!"))),
       React.createElement(Reveal, { delay: 420 }, React.createElement("p", { className: "hero-sub" }, "Sorrir com sa\u00fade \u00e9 viver com confian\u00e7a.")),
       React.createElement(Reveal, { delay: 520 }, React.createElement("p", { className: "hero-support" }, React.createElement("strong", null, "Agende sua avalia\u00e7\u00e3o"), " e descubra como \u00e9 f\u00e1cil cuidar do seu sorriso!")),
-      React.createElement(Reveal, { delay: 620, className: "hero-ctas" }, React.createElement("a", { href: WA_LINK, target: "_blank", rel: "noopener", className: "btn btn-whatsapp" }, React.createElement(Icon, { name: "whatsapp", size: 18 }), "Agendar avalia\u00e7\u00e3o"))
+      React.createElement(Reveal, { delay: 620, className: "hero-ctas" },
+        React.createElement("a", { href: WA_LINK, target: "_blank", rel: "noopener", className: "btn btn-whatsapp" }, React.createElement(Icon, { name: "whatsapp", size: 18 }), "Agendar avalia\u00e7\u00e3o"),
+        React.createElement("a", { href: "tel:011956188187", className: "btn btn-phone" }, "(11) 95618-8187")
+      )
     )
   )
 );
