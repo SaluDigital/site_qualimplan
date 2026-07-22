@@ -171,7 +171,7 @@ const Header = () => {
 
 const VideoPlaceholder = ({ label, src, className = "", style = {}, tall = false, showPlayBtn = true, previewTime = 0 }) => {
   const [playing, setPlaying] = useState(false);
-  const [muted, setMuted] = useState(false);
+  const [muted, setMuted] = useState(tall);
   const [previewReady, setPreviewReady] = useState(!(previewTime > 0 && src));
   const videoRef = useRef(null);
 
@@ -208,18 +208,12 @@ const VideoPlaceholder = ({ label, src, className = "", style = {}, tall = false
   useEffect(() => {
     if (tall && src && videoRef.current) {
       const video = videoRef.current;
-      video.muted = muted;
+      video.muted = true;
+      setMuted(true);
       video.play().catch(() => {
         video.muted = true;
         setMuted(true);
         video.play().catch(() => {});
-        const unlock = () => {
-          video.muted = false;
-          setMuted(false);
-          video.play().catch(() => {});
-        };
-        window.addEventListener("click", unlock, { once: true });
-        window.addEventListener("touchstart", unlock, { once: true });
       });
     }
   }, [tall, src]);
@@ -256,6 +250,7 @@ const VideoPlaceholder = ({ label, src, className = "", style = {}, tall = false
       playsInline: true,
       loop: true,
       muted,
+      autoPlay: tall,
       preload: previewTime > 0 ? "auto" : "metadata",
       onPlay: () => setPlaying(true),
       onPause: () => setPlaying(false),
@@ -268,7 +263,7 @@ const VideoPlaceholder = ({ label, src, className = "", style = {}, tall = false
 
 const Hero = () => React.createElement(
   "section",
-  { className: "hero hero-image", id: "hero" },
+  { className: "hero hero-image", id: "sorriso-avaliacao" },
   React.createElement("div", { className: "hero-bg-shape" }),
   React.createElement("div", { className: "hero-bg-shape-2" }),
   React.createElement("div", { className: "hero-grid-lines" }),
