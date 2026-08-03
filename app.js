@@ -94,9 +94,9 @@ const App = () =>
     React.createElement(
       "main",
       null,
+      React.createElement(BrandStory, null),
       React.createElement(ImplantHeroCopy, null),
       React.createElement(Metrics, null),
-      React.createElement(BrandStory, null),
       React.createElement(Structure, null),
       React.createElement(SmileDreams, null),
       React.createElement(Hero, null),

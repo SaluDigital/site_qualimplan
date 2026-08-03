@@ -18,6 +18,10 @@
 .hero-image .hero-copy{margin-left:clamp(140px,14vw,190px)!important}@media(max-width:1080px){.hero-image .hero-copy{margin-left:0!important}}
 .hero-image .hero-copy{margin-left:clamp(140px,14vw,190px)!important}
 @media(max-width:680px){.hero-image .hero-copy{margin-left:0!important}}
+main > .brand-story:first-child{padding-top:clamp(112px,12vw,152px)}
+.structure-lead p{margin:0 0 16px}.structure-lead p:last-child{margin-bottom:0}
+.brand-story-ctas{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:30px}
+.brand-story-eyebrow{font-size:14px}.brand-story-title-accent{color:var(--qp-accent-deep);font-style:italic;font-variation-settings:"opsz" 144,"SOFT" 100;text-shadow:0 10px 26px rgba(10,107,109,.14)}
 
 /* Hero alignment: same visual column as logo and metrics title */
 .hero.hero-image{
@@ -515,6 +519,14 @@
 @media(max-width:680px){
   .header-logo img{
     height:48px!important;
+  }
+
+  .implant-hero-copy .hero-copy{
+    order:2;
+  }
+
+  .implant-hero-copy .hero-inner > .reveal-scale{
+    order:1;
   }
 
   .implant-hero-copy .video-sound-toggle{

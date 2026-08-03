@@ -1,7 +1,7 @@
 const BrandStory = () =>
   React.createElement(
     "section",
-    { className: "brand-story", id: "clinica" },
+    { className: "brand-story", id: "hero" },
     React.createElement(
       "div",
       { className: "container" },
@@ -31,17 +31,16 @@ const BrandStory = () =>
         React.createElement(
           "div",
           { className: "brand-story-copy" },
-          React.createElement(Reveal, { delay: 80 }, React.createElement("span", { className: "eyebrow" }, "Sobre a Qualimplan")),
+          React.createElement(Reveal, { delay: 80 }, React.createElement("span", { className: "eyebrow brand-story-eyebrow" }, "Qualimplan")),
           React.createElement(
             Reveal,
             { delay: 140 },
             React.createElement(
               "h2",
               { className: "display brand-story-title" },
-              "Cl\u00ednica odontol\u00f3gica de refer\u00eancia",
-              React.createElement("br", null),
-              "no ",
-              React.createElement("em", null, "Cap\u00e3o Redondo.")
+              "Cl\u00ednica odontol\u00f3gica ",
+              React.createElement("em", { className: "brand-story-title-accent" }, "multidisciplinar e completa"),
+              " no Cap\u00e3o Redondo."
             )
           ),
           React.createElement(
@@ -50,16 +49,27 @@ const BrandStory = () =>
             React.createElement(
               "p",
               { className: "brand-story-text" },
-              "A Qualimplan nasceu com o prop\u00f3sito de oferecer \u00e0 regi\u00e3o um atendimento de excel\u00eancia, unindo uma estrutura moderna, um ambiente confort\u00e1vel e tecnologia avan\u00e7ada, al\u00e9m de contar com uma equipe de especialistas altamente qualificados."
+              "Cuidado especializado em todas as fases da vida, com uma equipe completa, estrutura moderna e atendimento de excel\u00eancia"
             )
           ),
           React.createElement(
             Reveal,
             { delay: 300 },
             React.createElement(
-              "p",
-              { className: "brand-story-text" },
-              "Com mais de 20 cirurgi\u00f5es-dentistas, a Qualimplan atende diversas especialidades, desde cuidados infantis at\u00e9 reabilita\u00e7\u00e3o oral completa."
+              "div",
+              { className: "brand-story-ctas" },
+              React.createElement(
+                "a",
+                {
+                  href: WA_LINK,
+                  target: "_blank",
+                  rel: "noopener",
+                  className: "btn btn-whatsapp",
+                },
+                React.createElement(Icon, { name: "whatsapp", size: 18 }),
+                "Agendar avalia\u00e7\u00e3o"
+              ),
+              React.createElement("a", { href: "tel:011956188187", className: "btn btn-phone" }, "(11) 95618-8187")
             )
           )
         )

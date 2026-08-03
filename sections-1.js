@@ -130,7 +130,7 @@ const Header = () => {
           "nav",
           { className: "header-nav " + (mobileOpen ? "open" : ""), "aria-label": "Navega\u00e7\u00e3o principal" },
           React.createElement("a", { href: "#hero", onClick: closeMobile }, "In\u00edcio"),
-          React.createElement("a", { href: "#clinica", onClick: closeMobile }, "Empresa"),
+          React.createElement("a", { href: "#estrutura", onClick: closeMobile }, "Empresa"),
           React.createElement(
             "div",
             { className: "header-menu-group " + (specialtiesOpen ? "open" : "") },
