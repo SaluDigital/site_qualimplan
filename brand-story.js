@@ -137,7 +137,7 @@ const SmileDreams = () => {
           React.createElement(
             "p",
             { className: "smile-dreams-lead" },
-            "As consultas s\u00e3o realizadas por especialistas que utilizam tecnologias avan\u00e7adas, garantido um atendimento r\u00e1pido, seguro e personalizado, focado no que voc\u00ea mais precisa."
+            "As consultas s\u00e3o avaliadas por profissionais que utilizam tecnologias avan\u00e7adas, garantido um atendimento r\u00e1pido, seguro e personalizado, focado no que voc\u00ea mais precisa."
           )
         )
       ),
@@ -226,12 +226,12 @@ const ImplantHeroCopy = () =>
         React.createElement(
           "p",
           { className: "hero-sub" },
-          "Recupere seu sorriso com avalia\u00e7\u00e3o especializada, estrutura completa e planejamento individualizado para o seu caso."
+          "Recupere seu sorriso com avalia\u00e7\u00e3o exclusiva, estrutura completa e planejamento individualizado para o seu caso."
         ),
         React.createElement(
           "p",
           { className: "hero-support" },
-          "Atendimento humanizado, equipe especializada e tecnologia reconhecida mundialmente para voltar a sorrir e mastigar com confian\u00e7a."
+          "Atendimento humanizado, profissionais dedicados e tecnologia reconhecida mundialmente para voltar a sorrir e mastigar com confian\u00e7a."
         ),
         React.createElement(
           "div",
